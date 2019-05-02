@@ -1,7 +1,7 @@
-baseurl:            ""
-url:                "https://gpaulissen.github.io"
+#baseurl:            ""
+#url:                "https://gpaulissen.github.io"
 github_username:    gpaulissen
 timezone:           UTC+1
 locale:             en_GB
-permalink:          /:year/:month/:day/:title/
+#permalink:          /:year/:month/:day/:title/
 exclude:            [vendor]
