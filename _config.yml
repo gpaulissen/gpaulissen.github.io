@@ -5,3 +5,5 @@ timezone:           UTC+1
 locale:             en_GB
 #permalink:          /:year/:month/:day/:title/
 exclude:            [vendor]
+
+theme: jekyll-theme-cayman
