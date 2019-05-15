@@ -28,6 +28,8 @@
 title         : "GJP's Blog"
 description   : 'Knowledge is power'
 slogan        : 'IT and bridge rules'
+logo_url      : 'gjp-tiny.jpg'
+author        : 'Gert-Jan Paulissen'
 
 
 
@@ -246,6 +248,7 @@ exclude:
     - README.md
     - INSTALL.md
     - vendor
+		- html-validate.sh
 
 
 

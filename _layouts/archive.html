@@ -3,21 +3,30 @@ layout: default
 format: archive
 ---
 <div id="content" class="row">
-  <div class="medium-8 medium-centered columns">
+    <div class="medium-8 medium-centered columns">
 
-    <h1>{{ page.title }}</h1>
+        <h1>{{ page.title }}</h1>
 
-    {{ content }}
+        {{ content }}
 
-    <div class="bem2">
-      {% include search %}
+        <div class="bem2">
+            {% include search %}
+        </div>
+
+        {% assign postsByYear = site.posts | group_by_exp:"post", "post.date | date: '%Y'" %}
+        {% for year in postsByYear %}
+        <h1>{{ year.name }}</h1>
+        {% assign postsByMonth = year.items | group_by_exp:"post", "post.date | date: '%B'" %}
+        {% for month in postsByMonth %}
+        <h2>{{ month.name }}</h2>
+        <ul class="toc">
+            {% assign posts = month.items | sort %}
+            {% include list-posts posts=posts %}
+        </ul>
+        {% endfor %}
+        {% endfor %}
+
     </div>
-
-    <ul class="toc">
-      {% for post in site.posts %}
-      <li><a href="{{ post.url | absolute_url }}">{% if post.subheadline %}<span>{{ post.subheadline }}</span>{% endif %}{{ post.title }}</a></li>
-      {% endfor %}
-    </ul>
-
-  </div>
 </div><!-- /.row -->
+
+
