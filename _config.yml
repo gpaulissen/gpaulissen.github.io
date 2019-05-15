@@ -248,7 +248,7 @@ exclude:
     - README.md
     - INSTALL.md
     - vendor
-		- html-validate.sh
+    - html-validate.sh
 
 
 
