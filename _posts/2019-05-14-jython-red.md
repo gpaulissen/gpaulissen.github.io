@@ -1,4 +1,5 @@
 ---
+title: "Jython for Robotframework EDitor (Eclipse)"
 categories: IT
 tags: [ jython, red, ant, perl, eclipse ]
 permalink: /jython-red/

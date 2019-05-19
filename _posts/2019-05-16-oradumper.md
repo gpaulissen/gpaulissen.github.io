@@ -1,6 +1,6 @@
 ---
-categories: IT
 title: About ING and dumping data to flat files
+categories: IT
 tags: [ Oracle, PRO*C, C ]
 permalink: /oradumper/
 ---
