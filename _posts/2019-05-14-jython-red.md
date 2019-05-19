@@ -1,7 +1,7 @@
 ---
 title: "Jython for Robotframework EDitor (Eclipse)"
-categories: IT
-tags: [ jython, red, ant, perl, eclipse ]
+categories: work
+tags: [ jython, red, ant, perl, eclipse, robotframework ]
 permalink: /jython-red/
 ---
 Setup of Jython for RED, the Robot Framework editor for Eclipse
