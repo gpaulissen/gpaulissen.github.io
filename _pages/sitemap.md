@@ -9,17 +9,15 @@ sitemap: false
 A list of all the posts and pages found on the site. For you robots out there is an [XML version]({{ "sitemap.xml" | relative_url }}) available for digesting as well.
 
 <h2>Pages</h2>
-{% for post in site.pages %}
-  {% if post.sitemap %}
-    {% include archive-single.html %}
-	{% endif %}
+{% assign posts=site.pages | where:"sitemap","true" %}
+{% for post in posts %}
+  {% include archive-single.html %}
 {% endfor %}
 
 <h2>Posts</h2>
-{% for post in site.posts %}
-  {% if post.sitemap %}
-    {% include archive-single.html %}
-	{% endif %}
+{% assign posts=site.posts | where:"sitemap","true" %}
+{% for post in posts %}
+  {% include archive-single.html %}
 {% endfor %}
 
 {% capture written_label %}'None'{% endcapture %}

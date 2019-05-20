@@ -39,7 +39,7 @@ highlighter          : rouge
 encoding             : utf-8
 destination          : _site
 lang                 : 'en'             # The language setting is used in /includes/header.html for html-settings
-
+locale               : 'nl'
 
 # Build settings
 markdown             : kramdown
@@ -54,6 +54,7 @@ timezone             : CET
 
 include:
   - _pages
+  - nl
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
@@ -147,6 +148,7 @@ defaults:
       share: true
       related: true
       sitemap: true
+      lang: en
   # _pages
   - scope:
       path: "_pages"
@@ -155,6 +157,7 @@ defaults:
       layout: single
       author_profile: true
       sitemap: true
+      lang: en
 
 comments:
   provider: "custom"

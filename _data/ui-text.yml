@@ -5,16 +5,14 @@
 # /_____/\__,_/_/ /_/\__, /\__,_/\__,_/\__, /\___/
 #                   /____/            /____/
 #
-#   This is the language file of *Simplicity*
+#   This is the language file of *Minimal Mistakes*
+#
 #   Add your translation and set the language in
-#   config.yml
+#   _config.yml or a page.
 #
-#   Example for config.yml › lang: 'de'
-#
-#   To translate *Simplicity* just edit the following data.
 #   The theme uses for example it like this:
 #
-#   {{ site.data.ui[site.lang].read_more | default: "Read More&nbsp;›" }}
+#   {{ site.data.ui-text[page.lang].read_more | default: "Read More&nbsp;›" }}
 
 
 # English (default)
@@ -121,5 +119,34 @@ pt-BR:
 pt-PT:
   <<: *DEFAULT_PT
 
-# Another locale
-# --------------
+# Dutch / Nederlands
+# -----------------
+# More on Accesskeys › http://www.cs.tut.fi/~jkorpela/forms/accesskey.html
+nl: &DEFAULT_NL
+  navigation_search             : 'Druk op toets [4] voor Zoeken'
+  navigation_menu               : 'Druk op toets [6] voor Navigatie'
+  navigation_home               : 'Druk op toets [1] voor Homepage'
+  read_more                     : 'Lees meer ›'
+  show_all_articles             : 'Toon meer artikelen ›'
+  visit_frontpage               : 'Ga naar de voorpagina'
+  comments_headline             : 'Commentaar'
+  enable_disqus                 : 'Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a>'
+  written_by                    : 'Geschreven door'
+  more_articles                 : 'Meer artikelen'
+  follow_me_on                  : 'Volg me op'
+  subscribe_to_my_rss_feed      : 'Schrijf je in voor mijn RSS Feed'
+  source                        : 'Bron'
+  check_out_link                : 'Bekijk de link ›'
+  enter_search_term             : 'Geef een zoekterm op en druk op ENTER'
+  search_results                : 'Zoekresultaten'
+  search                        : 'Zoek ›'
+  search_input_placeholder      : 'Zoek [druk op TAB en start met typen]'
+  try_404                       : 'Probeer…  '
+  no_problem_404                : 'Geen pobleem!'
+  start_over_404                : '...om opnieuw te starten op'
+  search_below_404              : '...naar **zoeken** hieronder  '
+  search_404                    : 'Zoek'
+  recent_posts                  : 'Recent'
+
+nl-NL:
+  <<: *DEFAULT_NL

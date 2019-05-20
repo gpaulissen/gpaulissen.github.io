@@ -4,7 +4,7 @@ categories: life
 permalink: /swimming-pool-1/
 ---
 So when we bought a house in August 2018 near Bordeaux, we decided to have a
-swimming pool. We started to get information in October 2018.
+swimming pool. We started the inquiries in October 2018.
 
 <!--more-->
 
