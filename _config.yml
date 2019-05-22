@@ -24,14 +24,11 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 #
-title                : "GJP's Blog"
+title                : "GJP's GitHub website"
 email                :
 description          : >- # this means to ignore newlines until the next variable
   Knowledge is power.
-twitter_username     : gert.jan.paulissen@gmail.com
 github_username      : gpaulissen
-minimal_mistakes_skin: default
-search               : true
 url                  : 'https://gpaulissen.github.io'
 repository           : gpaulissen/gpaulissen.github.io
 baseurl              : ''
@@ -39,22 +36,14 @@ highlighter          : rouge
 encoding             : utf-8
 destination          : _site
 lang                 : 'en'             # The language setting is used in /includes/header.html for html-settings
-locale               : 'nl'
 
 # Build settings
 markdown             : kramdown
-remote_theme         : mmistakes/minimal-mistakes
-#theme                : minimal-mistakes-jekyll
 # Outputting
-permalink            : /:categories/:title/
-paginate             : 5 # amount of posts to show
-paginate_path        : /page:num/
 # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone             : CET
 
-include:
-  - _pages
-  - nl
+include: [ index.md ]
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
@@ -75,14 +64,6 @@ include:
 #   \____/\___/_/ /_/ /_/    /_/    /_____/_/|_|\___/_/\__,_/\__,_/\___/____/
 #
 # Plugins (previously gems:)
-plugins:
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-gist
-  - jekyll-feed
-  - jemoji
-  - jekyll-include-cache
-  - jekyll-remote-theme
 
 # Exclude these files from your production _site
 exclude:
@@ -94,39 +75,6 @@ exclude:
     - vendor
     - html-validate.sh
 
-author:
-  name   : "Gert-Jan Paulissen"
-  avatar : "/assets/images/bio-photo.jpg"
-  bio    : "Working in the computer industry, playing bridge and living in France as a Dutch guy married with a French girl."
-  links:
-    - label: "About"
-      icon: "fas fa-fw fa-link"
-      url: "/about"
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook"
-      url: "https://www.facebook.com/gertjan.paulissen"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/gpaulissen"
-    - label: "LinkedIn"
-      icon: "fab fa-fw fa-linkedin"
-      url: "https://www.linkedin.com/in/gert-jan-paulissen-2508203/"
-  
-footer:
-  links:
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook"
-      url: "https://www.facebook.com/gertjan.paulissen"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/gpaulissen"
-    - label: "LinkedIn"
-      icon: "fab fa-fw fa-linkedin"
-      url: "https://www.linkedin.com/in/gert-jan-paulissen-2508203/"
-    - label: Sitemap
-      url: "/sitemap/"
-      type: "application/xml"
-
 #       ____       ____            ____
 #      / __ \___  / __/___ ___  __/ / /_
 #     / / / / _ \/ /_/ __ `/ / / / / __/
@@ -135,39 +83,3 @@ footer:
 #
 # Default Settings
 
-defaults:
-  # _posts
-  - scope:
-      path: ""
-      type: posts
-    values:
-      layout: single
-      author_profile: true
-      read_time: true
-      comments: false
-      share: true
-      related: true
-      sitemap: true
-      lang: en
-  # _pages
-  - scope:
-      path: "_pages"
-      type: pages
-    values:
-      layout: single
-      author_profile: true
-      sitemap: true
-      lang: en
-
-comments:
-  provider: "custom"
-  
-category_archive:
-  type: liquid
-  path: /categories/
-tag_archive:
-  type: liquid
-  path: /tags/
-
-# Frontpage-Layout-Settings
-excerpt_separator: <!--more-->   # Use <!--more--> in your posts to generate an excerpt and a teaser
