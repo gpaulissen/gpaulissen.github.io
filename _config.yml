@@ -83,3 +83,5 @@ exclude:
 #
 # Default Settings
 
+
+theme: jekyll-theme-cayman
