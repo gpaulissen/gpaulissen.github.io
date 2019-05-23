@@ -84,4 +84,4 @@ exclude:
 # Default Settings
 
 
-theme: jekyll-theme-cayman
+theme: jekyll-theme-minimal
