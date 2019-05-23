@@ -1,0 +1,66 @@
+#     __
+#    / /   ____ _____  ____ ___  ______ _____ ____
+#   / /   / __ `/ __ \/ __ `/ / / / __ `/ __ `/ _ \
+#  / /___/ /_/ / / / / /_/ / /_/ / /_/ / /_/ /  __/
+# /_____/\__,_/_/ /_/\__, /\__,_/\__,_/\__, /\___/
+#                   /____/            /____/
+#
+#   This is the language file of *Minimal Mistakes*
+#
+#   Add your translation and set the language in
+#   _config.yml or a page.
+#
+#   The theme uses for example it like this:
+#
+#   {{ site.data.ui-text[page.lang].read_more | default: "Read More&nbsp;›" }}
+
+
+# English (default)
+# -----------------
+# More on Accesskeys › http://www.cs.tut.fi/~jkorpela/forms/accesskey.html
+en: &DEFAULT_EN
+  back_to_top                   : 'Back to Top'
+  breadcrumb_home_label         : "Home"
+  breadcrumb_separator          : "/"
+  categories_label              : "Categories:"
+  comment_btn_submit            : "Submit Comment"
+  comment_btn_submitted         : "Submitted"
+  comment_error_msg             : "Sorry, there was an error with your submission. Please make sure all required fields have been completed and try again."
+  comment_form_comment_label    : "Comment"
+  comment_form_email_label      : "Email address"
+  comment_form_info             : "Your email address will not be published. Required fields are marked"
+  comment_form_md_info          : "Markdown is supported."
+  comment_form_name_label       : "Name"
+  comment_form_website_label    : "Website (optional)"
+  comment_success_msg           : "Thanks for your comment! It will show on the site once it has been approved."
+  comments_label                : "Leave a Comment"
+  comments_title                : "Comments"
+  date_label                    : "Updated:"
+  email_label                   : "Email"
+  ext_link_label                : "Direct Link"
+  feed_label                    : "Feed"
+  follow_label                  : "Follow"
+  less_than                     : "less than"
+  loading_label                 : "Loading..."
+  menu_label                    : "Toggle menu"
+  minute_read                   : "minute read"
+  page                          : "Page"
+  pagination_next               : "Next"
+  pagination_previous           : "Previous"
+  powered_by                    : "Powered by"
+  recent_posts                  : "Recent Posts"
+  related_label                 : "You May Also Enjoy"
+  search_label                  : "Toggle search"
+  search_placeholder_text       : 'Enter your search term...'
+  share_on_label                : 'Share on'
+  tags_label                    : "Tags:"
+  website_label                 : "Website"
+
+en-US:
+  <<: *DEFAULT_EN
+en-CA:
+  <<: *DEFAULT_EN
+en-GB:
+  <<: *DEFAULT_EN
+en-AU:
+  <<: *DEFAULT_EN

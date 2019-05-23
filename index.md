@@ -1,7 +1,10 @@
 ---
-redirect_pause: 10
-redirect_url: https://gpaulissen.github.io/blog
-layout: default
+# You don't need to edit this file, it's empty on purpose.
+# Edit theme's home layout instead if you wanna make some changes
+# See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+layout: home
+author_profile: true
+lang: en
 menu:
   - title: "My business Blog (🇬🇧)"
     url: /blog/
@@ -13,7 +16,11 @@ menu:
     url: /bml/
 ---
 
-**In {{ page.redirect_pause }} seconds your browser should follow <a href="{{ page.redirect_url }}">this link</a> automatically.**
+{% if site.redirect %}
+**In {{ site.redirect_pause }} seconds your browser should follow <a href="{{ site.redirect_url }}">this link</a> automatically.**
+{% endif %}
+
+# My GitHub projects
 
 {% for item in page.menu %}
 * [{{ item.title }}]({{ item.url }})

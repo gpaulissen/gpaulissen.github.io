@@ -29,6 +29,8 @@ email                :
 description          : >- # this means to ignore newlines until the next variable
   Knowledge is power.
 github_username      : gpaulissen
+minimal_mistakes_skin: default
+search               : false
 url                  : 'https://gpaulissen.github.io'
 repository           : gpaulissen/gpaulissen.github.io
 baseurl              : ''
@@ -36,10 +38,21 @@ highlighter          : rouge
 encoding             : utf-8
 destination          : _site
 lang                 : 'en'             # The language setting is used in /includes/header.html for html-settings
+locale               : 'en'
 
+# redirect this site to another?
+redirect             : true
+redirect_pause       : 5
+redirect_url         : '/blog'
+  
 # Build settings
 markdown             : kramdown
+remote_theme         : mmistakes/minimal-mistakes
+#theme                : minimal-mistakes-jekyll
 # Outputting
+#permalink            : /:categories/:title/
+#paginate             : 5 # amount of posts to show
+#paginate_path        : /page:num/
 # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone             : CET
 
@@ -64,6 +77,12 @@ include: [ index.md ]
 #   \____/\___/_/ /_/ /_/    /_/    /_____/_/|_|\___/_/\__,_/\__,_/\___/____/
 #
 # Plugins (previously gems:)
+plugins:
+  - jekyll-gist
+  - jekyll-feed
+  - jemoji
+  - jekyll-include-cache
+  - jekyll-remote-theme
 
 # Exclude these files from your production _site
 exclude:
@@ -75,6 +94,27 @@ exclude:
     - vendor
     - html-validate.sh
 
+author:
+  name   : "Gert-Jan Paulissen"
+  avatar : "/assets/images/bio-photo.jpg"
+  bio    : "Working in the computer industry, playing bridge for fun and living in France"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/gpaulissen"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/gert-jan-paulissen-2508203/"
+  
+footer:
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/gpaulissen"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/gert-jan-paulissen-2508203/"
+
 #       ____       ____            ____
 #      / __ \___  / __/___ ___  __/ / /_
 #     / / / / _ \/ /_/ __ `/ / / / / __/
@@ -83,5 +123,30 @@ exclude:
 #
 # Default Settings
 
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: false
+      share: true
+      related: true
+      sitemap: true
+  # _pages
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+      comments: false
+      sitemap: true
+
+# Frontpage-Layout-Settings
+excerpt_separator: <!--more-->   # Use <!--more--> in your posts to generate an excerpt and a teaser
 
 theme: jekyll-theme-minimal

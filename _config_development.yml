@@ -1,0 +1,9 @@
+remote_theme         : ''
+theme                : minimal-mistakes-jekyll
+redirect             : false
+
+plugins:
+  - jekyll-gist
+  - jekyll-feed
+  - jemoji
+  - jekyll-include-cache
